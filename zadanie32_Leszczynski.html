@@ -1,0 +1,28 @@
+
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function telefon(siec_k,marka_k,rok_k)//początek konstruktora 
+  { 
+   this.siec=siec_k; 
+   this.marka=marka_k; 
+   this.rok=rok_k;   
+  }//koniec konstruktora 
+              telefon.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.siec + ' ' + this.marka + ' ' + this.rok); 
+      }; 
+  var telefon1 = new telefon("Orange", "Samsung", "2021"); // nowy obiekt telefon1 
+  var telefon2 = new telefon('Play', 'Huawei', '2019'); 
+  telefon1.wypisz(); // uruchomienie metody wypisz() dotyczącej telefonu 1 
+  telefon2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól telefon 
+     document.write("telefon pierwszy"+"   "+telefon1.siec_k+"   "+telefon1.marka_k+"   "+telefon1.rok_k); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>

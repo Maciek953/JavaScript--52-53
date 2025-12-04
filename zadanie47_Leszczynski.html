@@ -1,0 +1,20 @@
+<!DOCTYPE html>   
+<head>    
+<title>Sprawdzenie danych </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+do { 
+var a_les=prompt("Podaj bok a=",""); 
+var b_les=prompt("Podaj bok b=",""); 
+var c_les=prompt("Podaj bok c=",""); 
+}
+while (!((a_les<b_les+c_les)&&(b_les<a_les+c_les)&&(c_les<a_les+b_les)&&(a_les>0)&&(b_les>0)&&(c_les>0)));
+
+document.write("Podane boki tworzą trójkąt, bok a = "+a_les+ " bok b = "+b_les+" bok c = "+c_les+" "); 
+</script> 
+</div> 
+</body> 
+</html> 

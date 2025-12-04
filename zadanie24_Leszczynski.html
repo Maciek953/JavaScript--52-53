@@ -1,0 +1,38 @@
+<!DOCTYPE html>   
+<head>    
+<title> zadanie 24</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:blue;font-size:50px;"> 
+<script language="JavaScript"> 
+var x_les=prompt("x1=",""); 
+var x2_les=prompt("x2=",""); 
+var y1_les;
+var y2_les;
+var y3_les_p;
+var y3_les;
+
+var x_les=parseFloat(x_les); 
+var x2_les=parseFloat(x2_les); 
+
+var x_les_rad=(x_les*Math.PI)/180;
+
+y1_les= 3*Math.pow(x_les,6/13);
+y2_les=2*Math.cos(x_les_rad)+3*Math.sin(x_les_rad);
+y3_les_p=Math.pow(x_les,5)+Math.pow(x2_les,4);
+y3_les=Math.pow(y3_les_p,1/3)*Math.abs(x_les-x2_les);
+
+
+
+document.write("Wczytane Liczby: <br>");
+document.write("x1="+x_les.toFixed(2)+"&nbsp;&nbsp;&nbsp;x2="+x2_les.toFixed(2)+" <br>");
+document.write("x1="+x_les.toFixed(2)+"&nbsp;&nbsp;&nbsp;x1="+x_les_rad.toFixed(2)+"<br>");
+document.write("y1="+y1_les.toFixed(2)+"<br>");
+document.write("y2="+y2_les.toFixed(2)+"<br>");
+document.write("y3="+y3_les.toFixed(2)+"<br>");
+
+</script> 
+</div> 
+</body> 
+</html>

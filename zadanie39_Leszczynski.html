@@ -1,0 +1,18 @@
+<h1 style="color:green;"> MENU </h1>
+<br>
+<br>
+
+<h2 style="color:red;"> 1 - Czerwony <br> </h2>
+<h2 style="color:blue;"> 2- Niebieski </h2>
+
+<input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_kow()" />
+ <script>
+ function fun_kow() {
+ var x_les = prompt("Podaj kolor", "");
+ if(x_les == 1 || x_les.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_les == 2 || x_les.toLowerCase() == "niebieski") {
+document.write('<h4 style="color:blue;">wczytałeś kolor niebieski</h6><br />');
+}
+}
+</script>

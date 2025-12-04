@@ -1,0 +1,31 @@
+<!DOCTYPE html>   
+<head>    
+<title>Sprawdzenie danych </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+do {
+    var liczba1=prompt("Podaj n=","");
+    var n_les = parseFloat(liczba1);
+}
+while(n_les<0)
+if (n_les==0) {
+    silnia_les=1;
+document.write("n="+n_les+"<br>"+n_les+"!="+silnia_les);
+}
+
+if (n_les>0) {
+    silnia_les=1;
+    for (i_les=1;i_les<=n_les;i_les++) {
+        silnia_les=silnia_les*i_les;
+    }
+    document.write("n= "+n_les+"<br>"+n_les+"!="+silnia_les);
+}
+
+
+</script> 
+</div> 
+</body> 
+</html> 

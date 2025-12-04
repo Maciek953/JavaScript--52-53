@@ -1,0 +1,36 @@
+<!DOCTYPE html>   
+<head>
+<title> Ulamek egipski </title>    
+<meta charset="utf-8">   
+</head>      
+<body> 
+<div style="color:green;font-size:54px;"> 
+<script language="JavaScript"> 
+
+var l1_les=prompt("liczba1=","");
+var l2_les=prompt("liczba2=","");
+var wynik;
+var a=parseFloat(l1_les);
+var b=parseFloat(l2_les);
+var pomoc1;
+var pomoc2;
+var pomoc3;
+var pomoc4;
+
+pomoc1=(a^3);
+pomoc2=(3*((a)^b)*(b));
+pomoc3=(3*(a)*((b)^b));
+pomoc4=(b^3);
+
+wynik=pomoc1+pomoc2+pomoc3+pomoc4;
+
+document.write("("+a+"+"+b);
+document.write(")"+"");
+document.write("="+a+"^3+3*(("+a+")^"+b+")*("+b+")+3*("+a+")*(("+b+")^"+b+")+"+b+"^3");
+document.write("="+pomoc1+"+"+pomoc2+"+"+pomoc3+"+"+pomoc4);
+document.write("="+wynik);
+
+</script> 
+</div> 
+</body> 
+</html>

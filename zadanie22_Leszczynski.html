@@ -1,0 +1,59 @@
+<html>  
+<head>  
+<title> 
+Przykład obliczenia pola i obwodu prostokatu 
+</title> 
+<script language="JavaScript"> 
+
+
+
+function pole_leszczynski(a_dana_les,b_dana_les) 
+{ 
+var a_dana_les; 
+var b_dana_les;
+
+var a_dana_les=parseFloat(a_dana_les);
+var b_dana_les=parseFloat(b_dana_les);
+
+var pole_wynik=a_dana_les*b_dana_les; 
+document.getElementsByName('pole')[0].value=pole_wynik.toFixed(2);           
+pokaz1.innerHTML="pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>";       
+ } 
+function obwod_leszczynski(a_dana_les,b_dana_les) 
+{ 
+var a_dana_les; 
+var b_dana_les;
+
+var a_dana_les=parseFloat(a_dana_les);
+var b_dana_les=parseFloat(b_dana_les);
+
+var obwod_wynik=a_dana_les*2+b_dana_les*2;
+
+   document.getElementsByName('obwod')[0].value=obwod_wynik.toFixed(2);  
+   pokaz2.innerHTML="obwod="+obwod_wynik.toFixed(2)+"cm^2"; 
+} 
+       </script> 
+</head>  
+<body>  
+ Obliczanie pola i obwodu
+<br> <br> 
+<form name="formularz" action="..." onsubmit="pole_leszczynski(this.a_dana_les.value,this.b_dana_les.value); 
+obwod_leszczynski(this.a_dana_les.value,this.b_dana_les.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="a_dana_les"> 
+     Podaj b= 
+        <input  size="6"  name="b_dana_les"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+        pole= 
+           <input  size="6"  name="pole"> 
+       obwod= 
+          <input  size="6"  name="obwod"> 
+</form> 
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body>  
+</html>

@@ -1,0 +1,43 @@
+<html>  
+<head>  
+<title> 
+Przykład obliczenia dlugosci bokow 
+</title> 
+<script language="JavaScript"> 
+
+var xa_les;
+var ya_les;
+var xb_les;
+var yb_les;
+var xc_les;
+var yc_les;
+
+
+
+function AB_les()
+{
+    var d1_pomoc=(xa_les-xb_les)*(xa_les-xb_les)+(ya_les-yb_les)*(ya_les-yb_les);
+    var d1=Math.sqrt(d1_pomoc)
+}
+function BC_les()
+{
+    var d2_pomoc=(xb_les-xc_les)*(xb_les-xc_les)+(yb_les-yc_les)*(yb_les-yc_les);
+    var d2=Math.sqrt(d2_pomoc)
+}
+function AC_les()
+{
+    var d3_pomoc=(xa_les-xc_les)*(xa_les-xc_les)+(ya_les-yc_les)*(ya_les-yc_les);
+    var d3=Math.sqrt(d3_pomoc)
+}
+</script>
+Podaj xa: <input type="text" id="punkt xa" value="podaj xa"> cm<br><br><br>
+Podaj ya: <input type="text" id="punkt ya" value="podaj ya"> cm<br><br><br>
+Podaj xb: <input type="text" id="punkt xb" value="podaj xb"> cm<br><br><br>
+Podaj yb: <input type="text" id="punkt yb" value="podaj yb"> cm<br><br><br>
+Podaj xc: <input type="text" id="punkt xc" value="podaj xc"> cm<br><br><br>
+Podaj yc: <input type="text" id="punkt yc" value="podaj yc"> cm<br><br><br>
+<input type="button" name="dlugosc AB" value="Oblicz dlugosc boku AB" Onclick="AB_les()"><br><br> 
+<input type="button" name="dlugosc BC" value="Oblicz dlugosc boku BC" Onclick="BC_les()"><br><br> 
+<input type="button" name="dlugosc AC" value="Oblicz dlugosc boku AC" Onclick="AC_les()"><br><br> 
+</body>  
+</html> 
